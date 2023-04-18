@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgotten Astronomers</title>
+  <link rel="icon" type="image/x-icon" href="/forgotten-astronomers/assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {},
+        fontFamily: {
+          'sans': ['"Public Sans"', 'sans-serif'],
+        },
+        colors: {
+          'beige': '#F5F0EA',
+          'grey': '#515151',
+          'green': '#22555A',
+          'cream': '#F5F5F5'
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- page container -->
+  <div class="bg-[#F5F5F5] min-w-screen min-h-screen flex flex-col">
+    <!-- navbar -->
+    <nav class="bg-[#F5F0EA] w-full h-[90px] shadow-xl fixed z-50">
+      <ul class="w-[900px] h-full m-auto flex flex-row list-none">
+        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <button class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg" onclick="window.location.href='kepler.html'">
+            <span class="text-[#F5F0EA] font-semibold flex m-auto text-lg text-center">Johannes Kepler</span>
+          </button>
+        </li>
+        <!-- <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Christiaan Huygens</a>
+        </li> -->
+        <!-- <li class="w-[200px] h-[60px] flex m-auto rounded-lg">
+          <a class="text-[#515151] font-semibold flex m-auto text-xl text-center" href="#">Christiaan Huygens</a>
+        </li> -->
+        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <button class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg" onclick="window.location.href='huygens.html'">
+            <span class="text-[#F5F0EA] font-semibold flex m-auto text-lg text-center">Christiaan Huygens</span>
+          </button>
+        </li>
+        <!-- <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Hipparchus</a>
+        </li> -->
+        <!-- <li class="w-[200px] h-[60px] flex m-auto rounded-lg">
+          <a class="text-[#515151] font-semibold flex m-auto text-xl text-center" href="#">Hipparchus</a>
+        </li> -->
+        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <button class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg" onclick="window.location.href='hipparchus.html'">
+            <span class="text-[#F5F0EA] font-semibold flex m-auto text-lg text-center">Hipparchus</span>
+          </button>
+        </li>
+        <!-- <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Tycho Brahe</a>
+        </li> -->
+        <!-- <li class="w-[200px] h-[60px] flex m-auto rounded-lg">
+          <a class="text-[#515151] font-semibold flex m-auto text-xl text-center" href="#">Tycho Brahe</a>
+        </li> -->
+        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <button class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg" onclick="window.location.href='brahe.html'">
+            <span class="text-[#F5F0EA] font-semibold flex m-auto text-lg text-center">Tycho Brahe</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- body -->
+    <div class="w-full h-full flex flex-row">
+      <!-- sidebar -->
+      <div class="w-[400px] h-screen bg-[#F5F0EA] shadow-xl top-0 left-0 z-10 flex">
+        <!-- profile -->
+        <div class="w-[250px] h-[470px] flex flex-col m-auto">
+          <!-- icon -->
+          <div class="w-[240px] h-[240px] flex m-auto rounded-full bg-[#F5F5F5] shadow-[0_0_10px_rgba(0,0,0,0.25)]">
+            <img class="rounded-full opacity-75" src="/forgotten-astronomers/assets/hipparchus.jpg" width="240" height="240" alt="kepler"/>
+          </div>
+          <!-- bio -->
+          <div class="w-[240px] h-[200px] flex flex-col m-auto">
+            <div class="w-full h-[50px] flex flex-row m-auto gap-2">
+              <span class="w-[85px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Name</span>
+              <span class="flex my-auto">Hipparchus</span>
+            </div>
+            <div class="w-full h-[50px] flex flex-row m-auto gap-2">
+              <span class="w-[85px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Country</span>
+              <span class="flex my-auto">Greece</span>
+            </div>
+            <div class="w-full h-[50px] flex flex-row m-auto gap-2">
+              <span class="w-[85px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Born</span>
+              <span class="flex my-auto">190 BC</span>
+            </div>
+            <div class="w-full h-[50px] flex flex-row m-auto gap-2">
+              <span class="w-[85px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Died</span>
+              <span class="flex my-auto">120 BC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section -->
+      <div class="w-full h-screen bg-[#F5F5F5] flex flex-col pt-[90px]">
+        <div class="w-full h-[280px] p-5 flex flex-col">
+          <!-- section title -->
+          <div class="text-[#515151] text-2xl font-bold">
+            Contributions:
+            <hr class="border border-[#515151] rounded-lg">
+          </div>
+          <!-- list -->
+          <ul class="list-inside list-disc pt-2 pl-1 text-[#515151]">
+            <li>Some of his famous work is measuring the positions and movements of celestial objects</li>
+            <br>
+            <li> He is credited with creating the first comprehensive star catalog, which included the positions of over 850 stars, as well as their brightness and color. This catalog was a major breakthrough in astronomy, as it allowed for the development of more accurate models of the motion of celestial objects </li>
+            <br>
+            <li> He had critical contributions to the study of solar and lunar eclipses, and he developed a method for predicting the occurrence of eclipses. </li>
+            <br>
+            <li> He also studied the motion of the Moon and discovered the phenomenon of precession, which is the gradual change in the orientation of the Earth's axis over time. </li>
+            <br>
+            <li> He contributed to the field of trigonometry. He created a table of chords, which was used for solving problems in astronomy and navigation. This table was the precursor to the modern trigonometric tables used in mathematics today. </li>
+          </ul>
+        </div>
+        <br>
+        <br>
+        <div class="w-full h-[280px] p-5 flex flex-col">
+          <!-- section title -->
+          <div class="text-[#515151] text-2xl font-bold">
+            Why They Were Forgotten:
+            <hr class="border border-[#515151] rounded-lg">
+          </div>
+          <!-- list -->
+          <ul class="list-inside list-disc pt-2 pl-1 text-[#515151]">
+            <li> During Hipparchus’s time period, the dissemination of knowledge was not as efficient as it is today. This limited Hipparchu’s impact and made it harder for later generations to appreciate his contributions. </li>
+            <br>
+            <li> there was a lack of a scientific community. Due to this, there was no established scientific community to preserve and promote the work of great thinkers like Hipparchus. As a result his work was not as widely recognized and appreciated. </li>
+            <br>
+            <li> Hipparchus' work was based on a geocentric model of the universe, which placed Earth at the center of the cosmos. This model was later displaced by the heliocentric model proposed by Copernicus and supported by Galileo, which may have contributed to a lack of interest in Hipparchus' work.</li>
+            <br>
+            <li> Hipparchus was limited in his ability to make accurate observations due to the limited availability of high-quality telescopes and other equipment. This may have limited his ability to make groundbreaking discoveries and contribute to the advancement of the field. </li>
+          </ul>
+        </div>
+        <br>
+        <br>
+        <div class="w-full h-[280px] p-5 flex flex-col">
+          <!-- section title -->
+          <div class="text-[#515151] text-2xl font-bold">
+            Interested? Learn More:
+            <hr class="border border-[#515151] rounded-lg">
+          </div>
+          <!-- list -->
+          <ul class="list-inside list-disc pt-2 pl-1 text-[#515151]">
+            <li><u><a href="https://www.youtube.com/watch?v=Z4mym6izIaw">Video: 2000 Years Ahead of His Time</a></u></li>
+            <br>
+            <li><u><a href="https://www.youtube.com/watch?v=3DcwgFmbuvk">Video: History of Hipparchus</a></u></li>
+            <br>
+            <li><u><a href="https://www.mathplayground.com/rocket_angles.html"> Interactive Game: Trigonometry Game</a></u></li>
+            <br>
+            <li><u><a href="https://www.mathwarehouse.com/unit-circle/unit-circle-game.php"> Interactive Game: Unit Circle Game</a></u></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

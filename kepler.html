@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgotten Astronomers</title>
+  <link rel="icon" type="image/x-icon" href="/forgotten-astronomers/assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {},
+        fontFamily: {
+          'sans': ['"Public Sans"', 'sans-serif'],
+        },
+        colors: {
+          'beige': '#F5F0EA',
+          'grey': '#515151',
+          'green': '#22555A',
+          'cream': '#F5F5F5'
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- page container -->
+  <div class="bg-[#F5F5F5] min-w-screen min-h-screen flex flex-col">
+    <!-- navbar -->
+    <nav class="bg-[#F5F0EA] w-full h-[90px] shadow-xl fixed z-50">
+      <ul class="w-[900px] h-full m-auto flex flex-row list-none">
+        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <button class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg" onclick="window.location.href='kepler.html'">
+            <span class="text-[#F5F0EA] font-semibold flex m-auto text-lg text-center">Johannes Kepler</span>
+          </button>
+        </li>
+        <!-- <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Christiaan Huygens</a>
+        </li> -->
+        <!-- <li class="w-[200px] h-[60px] flex m-auto rounded-lg">
+          <a class="text-[#515151] font-semibold flex m-auto text-xl text-center" href="#">Christiaan Huygens</a>
+        </li> -->
+        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <button class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg" onclick="window.location.href='huygens.html'">
+            <span class="text-[#F5F0EA] font-semibold flex m-auto text-lg text-center">Christiaan Huygens</span>
+          </button>
+        </li>
+        <!-- <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Hipparchus</a>
+        </li> -->
+        <!-- <li class="w-[200px] h-[60px] flex m-auto rounded-lg">
+          <a class="text-[#515151] font-semibold flex m-auto text-xl text-center" href="#">Hipparchus</a>
+        </li> -->
+        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <button class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg" onclick="window.location.href='hipparchus.html'">
+            <span class="text-[#F5F0EA] font-semibold flex m-auto text-lg text-center">Hipparchus</span>
+          </button>
+        </li>
+        <!-- <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Tycho Brahe</a>
+        </li> -->
+        <!-- <li class="w-[200px] h-[60px] flex m-auto rounded-lg">
+          <a class="text-[#515151] font-semibold flex m-auto text-xl text-center" href="#">Tycho Brahe</a>
+        </li> -->
+        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <button class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg" onclick="window.location.href='brahe.html'">
+            <span class="text-[#F5F0EA] font-semibold flex m-auto text-lg text-center">Tycho Brahe</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- body -->
+    <div class="w-full h-full flex flex-row">
+      <!-- sidebar -->
+      <div class="w-[400px] h-screen bg-[#F5F0EA] shadow-xl top-0 left-0 z-10 flex">
+        <!-- profile -->
+        <div class="w-[250px] h-[470px] flex flex-col m-auto">
+          <!-- icon -->
+          <div class="w-[240px] h-[240px] flex m-auto rounded-full bg-[#F5F5F5] shadow-[0_0_10px_rgba(0,0,0,0.25)]">
+            <img class="rounded-full opacity-75" src="/forgotten-astronomers/assets/kepler.jpg" width="240" height="240" alt="kepler"/>
+          </div>
+          <!-- bio -->
+          <div class="w-[240px] h-[200px] flex flex-col m-auto">
+            <div class="w-full h-[50px] flex flex-row m-auto gap-2">
+              <span class="w-[85px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Name</span>
+              <span class="flex my-auto">Johannes Kepler</span>
+            </div>
+            <div class="w-full h-[50px] flex flex-row m-auto gap-2">
+              <span class="w-[85px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Country</span>
+              <span class="flex my-auto">Germany</span>
+            </div>
+            <div class="w-full h-[50px] flex flex-row m-auto gap-2">
+              <span class="w-[85px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Born</span>
+              <span class="flex my-auto">December 27, 1571</span>
+            </div>
+            <div class="w-full h-[50px] flex flex-row m-auto gap-2">
+              <span class="w-[85px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Died</span>
+              <span class="flex my-auto">November 15, 1630</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section -->
+      <div class="w-full h-screen bg-[#F5F5F5] flex flex-col pt-[90px]">
+        <div class="w-full h-[280px] p-5 flex flex-col">
+          <!-- section title -->
+          <div class="text-[#515151] text-2xl font-bold">
+            Contributions:
+            <hr class="border border-[#515151] rounded-lg">
+          </div>
+          <!-- list -->
+          <ul class="list-inside list-disc pt-2 pl-1 text-[#515151]">
+            <li>He is best known for his laws of planetary motion (The Law of Orbits,The Law of Areas, and The Law of Periods), which he developed through years of meticulous observation and mathematical analysis.</li>
+            <br>
+            <li>Kepler's laws provided a crucial step forward in our understanding of the solar system and the universe as a whole. They allowed astronomers to accurately predict the movements of the planets and other celestial bodies, and paved the way for future discoveries and advancements in the field of astronomy.</li>
+            <br>
+            <li> He was pioneer in the use of telescopes for astronomical observations and made key contributions to the development of optics.</li>
+            <br>
+            <li>Kepler was a skilled mathematician who made significant contributions to the fields of geometry and calculus. He developed a method for calculating the volume of solids with curved surfaces, and he also developed a method for finding the roots of equations.</li>
+          </ul>
+        </div>
+        <br>
+        <div class="w-full h-[280px] p-5 flex flex-col">
+          <!-- section title -->
+          <div class="text-[#515151] text-2xl font-bold">
+            Why They Were Forgotten:
+            <hr class="border border-[#515151] rounded-lg">
+          </div>
+          <!-- list -->
+          <ul class="list-inside list-disc pt-2 pl-1 text-[#515151]">
+            <li> later discoveries under Newton overshadowed Kepler’s work in the eyes of later astronomers.</li>
+            <br>
+            <li> Kepler’s work was difficult to understand as it was highly mathematical and theoretical, which could have led to being overlooked by astronomers who were more interested in observational work. </li>
+            <br>
+            <li>Kepler lived was during political and religious upheaval in Europe. Thus, it made it difficult for him to gain support for his work, and may have contributed to his work being overlooked by later generations. </li>
+            <br>
+            <li>  Kepler’s work was written in Latin which was not widely spoken or understood by later astronomers.</li>
+          </ul>
+        </div>
+        <div class="w-full h-[280px] p-5 flex flex-col">
+          <!-- section title -->
+          <div class="text-[#515151] text-2xl font-bold">
+            Interested? Learn More:
+            <hr class="border border-[#515151] rounded-lg">
+          </div>
+          <!-- list -->
+          <ul class="list-inside list-disc pt-2 pl-1 text-[#515151]">
+            <li><u><a href="https://www.youtube.com/watch?v=wjOOrr2uPuU">Video: Solar System Dynamics: Orbits and Kepler's Laws</a></u></li>
+            <br>
+            <li><u><a href="https://www.youtube.com/watch?v=htxGvdQbl5w">Video: Kepler's Laws of Planetary Motion</a></u></li>
+            <br>
+            <li><u><a href="https://www.edumedia-sciences.com/en/media/347-keplers-laws#:~:text=Kepler%27s%20laws%20HTML5&text=Each%20planet%20or%20comet%20moves,axis%20length%20of%20their%20orbits.">Interactive game: Kepler's Laws</a></u></li>
+            <br>
+            <li><u><a href="https://www.youtube.com/watch?v=wjOOrr2uPuU">Simulation: Plenetary Orbit Simulator</a></u></li>
+            <br>
+            <li><u><a href="https://www.purposegames.com/game/keplers-laws-of-planetary-motion">Matching game: Kepler's vocabulary</a></u></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

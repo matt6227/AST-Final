@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgotten Astronomers</title>
+  <link rel="icon" type="image/x-icon" href="/forgotten-astronomers/assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {},
+        fontFamily: {
+          'sans': ['"Public Sans"', 'sans-serif'],
+        },
+        colors: {
+          'beige': '#F5F0EA',
+          'grey': '#515151',
+          'green': '#22555A',
+          'cream': '#F5F5F5'
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="min-w-screen min-h-screen flex">
+    <div class="w-[300px] h-[100px] flex flex-col m-auto gap-4">
+      <span class="flex m-auto font-bold text-2xl text-[#515151]">How Many Do You Know?</span>
+      <button class="w-[120px] h-[40px] flex m-auto bg-[#22555A] rounded-lg" onclick="window.location.href='kepler.html'">
+        <span class="text-lg text-[#F5F5F5] font-semibold flex m-auto">Click Here!</span>
+      </button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,2 +1,2 @@
-# AST-Final
-Final project for forgotten astronomers
+# forgotten-astronomers
+AST9 Term Project
